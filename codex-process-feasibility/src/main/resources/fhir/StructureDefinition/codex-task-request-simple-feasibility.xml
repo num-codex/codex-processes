@@ -155,14 +155,5 @@
             <path value="Task.output.value[x].identifier"/>
             <max value="0"/>
         </element>
-        <element id="Task.output:measure-report.extension:dic">
-            <path value="Task.output.extension" />
-            <sliceName value="dic" />
-            <type>
-                <code value="Extension" />
-                <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/dic" />
-            </type>
-            <mustSupport value="true" />
-        </element>
     </differential>
 </StructureDefinition>
