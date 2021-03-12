@@ -45,8 +45,8 @@ Messages, queries and results are represented by FHIR resources. The following t
 10. After arrival, the ZARS FHIR communication server will send the `result` Task resource to the ZARS BPE via websocket subscription. The incoming `result` message will use its correlation ID to match the original `request` process to continue. 
     
 10. As part of this process, the MeasureReport resource is fetched from the DIZ.
-    
-10. The fetched MeasureReport resource is stored immediately on the ZARS FHIR communication server together with the updated Task resource which references the MeasureReport resource in its output parameter, in order to make it available to the initial requester.
+
+10. The fetched MeasureReport resource is stored immediately on the ZARS FHIR communication server together with the updated Task resource. The Task resource references the MeasureReport resource in its output parameter, in order to make it available to the initial requester.
 
 ## Request Process as BPMN Model
 
